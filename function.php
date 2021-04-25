@@ -4,7 +4,7 @@
 
 function task1($str, $return = true)
 {
-    $result = implode('тут тег "p"', array_map(function ($bmw) {
+    $result = implode('тут тег &lt;p&gt;', array_map(function ($bmw) {
         return '<p>'.$bmw.'</p>';
     }, $str));
     if ($return) {
